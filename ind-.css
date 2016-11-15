@@ -1,0 +1,44 @@
+*{ font-family:微软雅黑,Arial,sans-serif,sans; font-size:14px; margin:0px;border:0px;padding:0px; }
+
+body{ width:100%; height:100%; background:#ffffff no-repeat;}
+
+#main{width:100%; height:100%; }
+
+@media only screen and (max-width:1200px){  /*自适应*/
+    div[class="right"]{width:400px !important;}
+    div[class="min_cen"]{width:200% !important;}
+}
+
+@media only screen and (max-width:900px){
+    div[class="right"]{width:400px !important;}
+    div[class="min_cen"]{width:150% !important;}
+}
+
+@media only screen and (max-width:600px){
+    div[class="right"]{width:200px !important;}
+    div[class="min_cen"]{width:100% !important;}
+}
+
+#left{ background:#1d1d1d;  float:left; width:180px; height:100%;}
+#title{ color:#ffffff; text-align:center;background:#bf1c1c; padding:15px;font-size:16px;}
+li { color:#b6b6b6; text-align:center; height:70px; list-style:none; line-height:70px; font-size:16px;}
+li a{ color:#b6b6b6; text-decoration:none; font-size:14px;}
+.effect_1{ color:#b6b6b6; text-align:center; height:70px; list-style:none; line-height:70px; font-size:16px;}
+.effect_2{ text-decoration: underline; background:#313131;}
+
+.right{ float:left; padding:15px 20px; width:80%; height:100%;}
+.img{ width:150px; height:150px; background:#434343; float:left; margin:15px;}
+#top{ background:#313131; position:fixed; opacity:0.8; width:100%; }
+#top a{color:#ffffff; text-decoration:none; margin:5px 20px; }
+.ta1{color:#ff0000; float:left; padding:10px 0px;}
+.ta2{color:#ffffff; background:#0f0f0f; text-decoration:underline; float:left; padding:10px 0px;}
+.buyers{font-size:18px; margin:50px 0px 0px 15px; color:#bf1c1c;font-weight:bold; width:100%; }
+.buyers_2{font-size:18px; margin:20px 0px 0px 15px; color:#bf1c1c;font-weight:bold; width:100%; }
+#min{ margin-top:35px;}
+.min_cen{width:100%;}
+.clear{clear:both;}
+
+.imageground {position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: #666;display: block;z-index: 80;opacity:0.5;filter:alpha(opacity=50); };
+.imgbox{position:absolute;top: 0;left: 0;background: #FFF;display: block;z-index: 90; padding: 10px; width: 800px; height: 532px; }
+.box{position:absolute;top: 200px;left: 200px;background: #FFF;display: block;z-index: 90; padding: 0px; width: 730px; height: 497px;}
+.bigimg{position:absolute;top: 15px; left: 15px;padding: ;margin: 0 auto;border: none;width: 700px;height: 467px;vertical-align: middle;z-index: 90;};
