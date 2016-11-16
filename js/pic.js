@@ -13,10 +13,9 @@ var picbg=getSingle(function(){
 	return bgdiv;
 });
 
-var picZoom=getSingle(function(img){
+var picZoom=getSingle(function(){
 	var picdiv = document.createElement('div');
 	picdiv.className = "box";
-	picdiv.innerHTML = "<img src='"+img+"' class='bigimg'>";
 	picdiv.style.display = "none";
 	document.body.appendChild(picdiv);
 	return picdiv;
@@ -34,16 +33,17 @@ function getScrollTop(){
 };
 
 for(var i=0;i<myimg.length;i++){
-	imgtext= myimg[i].src.split(".",1);
-	imgsrc=imgtext[0]+"b.jpg";
-	
-	myimg[i].onclick = function(){
+	myimg[i].onclick = function(imgsrc){
+		var imgtext = this.src.split(".",1);
+		var imgsrc=imgtext[0]+"b.jpg";
 		var scrollTop = getScrollTop();
 		var bg = picbg();
-		var pic = picZoom(imgsrc);
+		var pic = picZoom();
 		bg.style.top = scrollTop+"px";
 		pic.style.top = 200+scrollTop+"px";
 		pic.style.display = "block";
+
+		pic.innerHTML = "<img src='"+imgsrc+"' class='bigimg'>";
 		bg.style.display = "block";
 		pic.onclick =function(){
 			bg.style.display = "none";
